@@ -6,19 +6,25 @@ using namespace std;
 
 int main()
 {
-  string expression;
-  TPostfix postfix;
-  double res;
+    setlocale(LC_ALL, "Russian");
 
-  setlocale(LC_ALL, "Russian");
-  //cout << "Введите арифметическое выражение: ";
-  //cin >> expression;
-  //cout << expression << endl;
-  cout << "Арифметическое выражение: " << postfix.GetInfix() << endl;
-  postfix.ToPostfix();
-  cout << "Постфиксная форма: " << postfix.GetPostfix() << endl;
-  res = postfix.Calculate();
-  cout << res << endl;
+    string expression = "c*(a+b)";
+    Postfix postfix(expression);
+    map<char, double> values = {
+        {'a', 1},
+        {'b', 2},
+        {'c', 4},
+        {'d', -2},
+        {'e', -1},
+        {'f', 0}
+    };
 
-  return 0;
+    double result;
+
+    result = postfix.calculate(values);
+    cout << "Арифметическое выражение: " << postfix.getInfix() << endl;
+    cout << "Постфиксная форма выражения: " << postfix.getPostfix() << endl;
+    cout << "Результат: " << result << endl;
+
+    return 0;
 }

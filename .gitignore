@@ -1,3 +1,9 @@
+# VSCode project files
+.vscode
+
+# Visual Studio project files
+*.vcxproj
+
 # Compiled Object files
 *.slo
 *.lo
@@ -27,4 +33,6 @@
 *.exe
 *.out
 *.app
-/Студенты/
+
+# Build dir
+build/
