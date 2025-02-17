@@ -1,5 +1,5 @@
-﻿#ifndef __POSTFIX_H__
-#define __POSTFIX_H__
+﻿#ifndef POSTFIX_H
+#define POSTFIX_H
 
 #include "TStack.h"
 

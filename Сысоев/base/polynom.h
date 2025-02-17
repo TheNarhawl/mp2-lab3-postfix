@@ -1,5 +1,5 @@
-#ifndef _POLYNOM_H__
-#define _POLYNOM_H__
+#ifndef POLYNOM_H
+#define POLYNOM_H
 
 #include <iostream>
 #include <cmath>
